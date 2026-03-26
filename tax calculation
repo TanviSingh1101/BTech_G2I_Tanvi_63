@@ -1,0 +1,27 @@
+//the code to calculate the tax
+#include<stdio.h>
+#include<math.h>
+int main()
+{ int tax,income;
+printf("enter the annual income of the person");
+scanf("%d",&income);
+if(income<=150000)
+{
+    printf("tax not imposed on them");
+}
+else if(150001<=income&&income<=300000)
+{
+    tax=10*income/100;
+    printf("the tax is imposed on them of :%d",tax);
+}
+else if(300001<=income&&income<=500000)
+{
+    tax=(20*income)/100;
+    printf("the imposed tax is%d",tax);
+}
+else
+{    tax=(30*income)/100;
+    printf("the imposed tax is:%d",tax);
+}
+return 0;
+}
