@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{ int  arr[5],i;
+i=0;
+while(i<5)
+{printf("enter the elements of the array:\n");
+scanf("%d",&arr[i]);
+i++;
+}
+printf("the entered elements of array is :");
+for(i=0;i<5;i++)
+printf("arr[%d]=%d\t",i,arr[i]);
+return 0;
+}
