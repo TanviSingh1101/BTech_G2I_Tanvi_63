@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n=0;
+    char str[100];
+    cout<<"Enter the string ";
+    cin>>str;
+    while(str[n]!='\0')
+    {
+        n++;
+    }
+    cout<<"The length of string is "<<n;
+    return 0;
+}
