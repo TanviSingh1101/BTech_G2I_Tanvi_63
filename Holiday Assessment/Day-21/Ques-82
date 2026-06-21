@@ -1,0 +1,23 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    int i,j,n;
+    char str[100],rst[100];
+    cout<<"Enter the string ";
+    cin>>str;
+    n=strlen(str);
+    j=0;
+    for(i=n-1;i>=0;i--)
+    {
+      rst[j]=str[i];
+      j++;
+    }
+    cout<<"The reverse string is ";
+    for(i=0;i<n;i++)
+    {
+        cout<<rst[i];
+    }
+    return 0 ;
+}
