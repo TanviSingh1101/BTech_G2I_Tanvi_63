@@ -1,0 +1,23 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    int n,i,j=0;
+    char str[100],rst[100];
+    cout<<"Enter the string";
+    cin.getline(str,100);
+    n=strlen(str);
+    for(i=0;i<n;i++)
+    {
+       if(str[i]!=' ')
+       {
+         rst[j]=str[i];
+         j++;
+       }
+    }
+    cout<<"The new string is ";
+    for(i=0;i<n;i++)
+    cout<<rst[i];
+    return 0;
+}
