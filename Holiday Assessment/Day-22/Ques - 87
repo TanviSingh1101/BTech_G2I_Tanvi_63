@@ -1,0 +1,26 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    int n,i,j,count=0;
+    char str[100],rst[100];
+    cout<<"Enter the string";
+    cin.getline(str,100);
+    n=strlen(str);
+    cout<<"The number of times the character repeats is \n";
+   for(i=0;i<n-1;i++)
+   {
+       for(j=i+1;j<n;j++)
+       {
+        if(str[i]==str[j])
+        {
+            count++;
+            cout<<str[i]<<"-"<<count<<"\n";
+        }
+       }
+       count=0;
+   }
+   cout<<"The other characters do not repeat";
+    return 0;
+}
