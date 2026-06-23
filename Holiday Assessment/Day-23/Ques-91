@@ -1,0 +1,36 @@
+#include<iostream>
+#include<cstring>
+#include<algorithm>
+using namespace std;
+int main()
+{
+    int n,m,i;
+    char str[100],rst[100];
+    cout<<"Enter the strings \n";
+    cout<<"First string ";
+    cin.getline(str,100);
+    cout<<"Second string ";
+    cin.getline(rst,100);
+    n=strlen(str);
+    m=strlen(rst);
+    if(n!=m)
+    {
+        cout<<"Not anagram";
+        return 0 ;
+    }
+    else
+    {
+        std::sort(str,str+n);
+        std::sort(rst,rst+m);
+        for(i=0;i<n;i++)
+        {
+            if(str[i]!=rst[i])
+            {
+            cout<<"Not anagram string";
+            return 0;
+            }
+        }
+        cout<<"Its anagram string";
+    }
+    return 0 ;
+}
