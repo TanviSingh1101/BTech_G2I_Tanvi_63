@@ -1,0 +1,26 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    int i,j,n,count=1;
+    char str[100],flag;
+    cout<<"Enter the string ";
+    cin.getline(str,100);
+    n=strlen(str);
+    cout<<"The compressed string is ";
+    for(i=0;i<n;i++)
+    {
+        if(str[i]==str[i+1])
+        {
+        count++;
+        flag=str[i];
+        }
+        else
+        {
+            cout<<flag<<count;
+            count=1;
+        }
+    }
+    return 0;
+}
