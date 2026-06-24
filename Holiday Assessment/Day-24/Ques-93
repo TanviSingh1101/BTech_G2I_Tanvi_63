@@ -1,0 +1,32 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    int i,j,n,m;
+    char str[100],rst[100],flag,count;
+    cout<<"Enter the both the string ";
+    cin.getline(str,100);
+    cin.getline(rst,100);
+    n=strlen(str);
+    m=strlen(rst);
+    while(i!=n-1)
+    {
+    flag=str[0];
+    for(i=1;i<n;i++)
+    {
+        str[i-1]=str[i];
+    }
+    str[n-1]=flag;
+    for(i=0;i<n;i++)
+    {
+        if(str[i]==rst[i])
+        {
+            cout<<"Its rotating string";
+            return 0;
+        }
+    }
+    }
+    cout<<"Not rotating string ";
+    return 0;
+}
